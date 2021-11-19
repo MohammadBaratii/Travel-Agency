@@ -192,7 +192,7 @@
 .card:hover {
   transform: translateY(-0.5rem);
 }
-.card-price {
+.card__price {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -205,7 +205,7 @@
   color: #fff;
   border-radius: 50px;
 }
-.card_img {
+.card__img {
   width: 16rem;
   height: 16rem;
   margin-bottom: 1.5rem;
@@ -213,12 +213,12 @@
   object-fit: cover;
 }
 
-.card_info {
+.card__info {
   text-align: justify;
   color: #333;
   margin-bottom: 2.7rem;
 }
-.card_buy-ticket {
+.card__buy-ticket {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -229,7 +229,7 @@
   text-decoration: none;
   transition: 0.2s;
 }
-.card_buy-ticket:hover {
+.card__buy-ticket:hover {
   background-color: #ff7b00;
   color: #fff;
 }
@@ -277,39 +277,40 @@
   background-color: #101010;
   text-align: center;
 }
-.footer_content {
+.footer__content {
   width: 100%;
 }
-.footer_social-media {
-  display: flex;
-  justify-content: center;
-
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.footer_social-media i {
-  margin: 0 3rem;
-  color: #797979;
-  font-size: 2rem;
-  cursor: pointer;
-}
-.footer_social-media i:hover {
-  color: #ddd;
-}
-.footer_content h3 {
+.footer__content h3 {
   direction: ltr;
   color: #797979;
   font-weight: 300;
   font-size: 1.5rem;
   font-family: "great vibes";
 }
-.footer_content h4 {
+.footer__content h4 {
   color: #797979;
   font-weight: 300;
 }
-.footer_content h4 span {
+.footer__content h4 span {
   color: #eee;
 }
+.footer__social-media {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.footer__social-media i {
+  margin: 0 3rem;
+  color: #797979;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.footer__social-media i:hover {
+  color: #ddd;
+}
+
 /* active elements */
 .nav--active {
   height: 3rem;
@@ -330,6 +331,8 @@
   opacity: 1;
   pointer-events: all;
 }
+
+/* responsive */
 @media screen and (max-width: 1220px) {
   .menu {
     width: 40%;
@@ -342,11 +345,11 @@
   .card {
     width: 16rem;
   }
-  .card_img {
+  .card__img {
     width: 14rem;
     height: 14rem;
   }
-  .card-price {
+  .card__price {
     top: 13.7rem;
   }
 }
@@ -359,11 +362,11 @@
     width: 26rem;
     margin: 1rem 0;
   }
-  .card_img {
+  .card__img {
     width: 24rem;
     height: 24rem;
   }
-  .card-price {
+  .card__price {
     top: 23.7rem;
   }
 }
@@ -417,17 +420,17 @@
     width: 18rem;
     margin: 1rem 0;
   }
-  .card_img {
+  .card__img {
     width: 16rem;
     height: 16rem;
   }
-  .card-price {
+  .card__price {
     top: 15.7rem;
   }
   .why-us__answer div {
     width: 90%;
   }
-  .footer_social-media i {
+  .footer__social-media i {
     margin: 0 1.5rem;
   }
 }
